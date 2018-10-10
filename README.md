@@ -10,3 +10,10 @@ docker run --rm --name cassandra-count -e "CASSANDRA_HOST=localhost" -e "CASSAND
 ````
 
 The configuration for `--network` depends on the context your Cassandra instance is deployed in.
+
+### Kubernetes
+
+Usage in Kubernetes is straightforward:
+````bash
+kubectl run cassandra-count --rm --attach --restart=Never --image=soerenhenning/cassandra-count --env "CASSANDRA_HOST=cassandra" --env "CASSANDRA_PORT=9042" --env "KEYSPACE=my-keyspace" --env "TABLE=my-table"
+````
