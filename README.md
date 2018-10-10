@@ -2,7 +2,7 @@
 
 This is a Docker image for counting rows in a Cassandra table. It uses the great [cassandra-count](https://github.com/brianmhess/cassandra-count) command line tool by [brianmhess](https://github.com/brianmhess).
 
-Currently it only support setting the host and port of Cassandra instance as well as a table name to request and its correspodning keyspace. These parameters are set by environment variables. Usage from Docker is as follows:
+Currently it only supports to set the host and port of the Cassandra instance as well as the table name to request and its corresponding keyspace. These parameters are set via environment variables. Usage from Docker is as follows:
 
 ````bash
 docker pull soerenhenning/cassandra-count
